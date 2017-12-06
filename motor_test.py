@@ -32,13 +32,24 @@ def motor_stop():
 		GPIO.output(IN2,GPIO.LOW)
 		GPIO.output(PWM,GPIO.LOW)
 
+motor_stop()
+print('OFF')
+sleep(3)
 
 motor_spin(True)
+print('ON,clockwise')
 sleep(3)
+
 motor_stop()
+print('OFF')
 sleep(3)
+
 motor_spin(False)
+print('ON,anit-clockwise')
 sleep(3)
+
 motor_stop()
+print('OFF')
+sleep(3)
 
 GPIO.cleanup()
