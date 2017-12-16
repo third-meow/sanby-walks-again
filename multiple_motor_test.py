@@ -7,7 +7,8 @@ GPIO.setmode(GPIO.BOARD)
 AIN2 = 3
 AIN1 = 5
 BIN2 = 11
-BIN1 = 13
+#BIN1 = 13
+BIN1 = 7
 CIN2 = 18
 CIN1 = 22
 
